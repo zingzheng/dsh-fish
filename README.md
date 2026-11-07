@@ -1,9 +1,12 @@
 # dsh-fish
 
-A reasoning-style dock above the DeepSeek Harness Web UI composer. It is a
-human-only surface: the row is rendered entirely on the client, is not a
-session event, and does not affect the real conversation or the model's
-output. The plugin registers no model-facing tool and no prompt section.
+English | [中文](README.zh.md)
+
+**dsh摸鱼小组件：** A reasoning-style dock above the DeepSeek Harness Web UI
+composer. It is a human-only surface: the row is rendered entirely on the
+client, is not a session event, and does not affect the real conversation or
+the model's output. The plugin registers no model-facing tool and no prompt
+section.
 
 Two apps share the same row:
 

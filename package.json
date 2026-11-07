@@ -1,0 +1,67 @@
+{
+  "name": "dsh-fish",
+  "version": "0.2.0",
+  "description": "A reasoning-style dock above the DSH composer with a stock watchlist and a host-backed TXT/EPUB reader.",
+  "type": "module",
+  "license": "MIT",
+  "author": "zingzheng",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zingzheng/dsh-fish.git"
+  },
+  "homepage": "https://github.com/zingzheng/dsh-fish#readme",
+  "bugs": {
+    "url": "https://github.com/zingzheng/dsh-fish/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "ebook",
+    "epub",
+    "reader",
+    "stocks",
+    "watchlist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "book.js",
+    "epub.js",
+    "books.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/icon-180.png",
+    "LICENSE",
+    "README.md"
+  ],
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-commands",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "node --test test/novel.test.js"
+  }
+}

@@ -212,6 +212,7 @@ plugin reload rather than a reinstall.
 - `cordis.patch.yml` — bundle patch that inserts the plugin.
 - `locale/*.json` — Plugin Manager metadata.
 - `icon.svg` — original plugin artwork.
+- `README.md` / `README.zh.md` — English and Chinese documentation.
 
 ## Notes
 
